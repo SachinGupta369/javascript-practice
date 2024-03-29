@@ -62,4 +62,4 @@ incomeIncrease.Blog='99 crore'
 incomeIncrease.Software='9 Billion'
 
 console.log(incomeSource.Blog);
-console.log(incomeIncrease.Blog);
+console.log(incomeIncrease.Blog); 
