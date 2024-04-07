@@ -13,8 +13,8 @@ const myarr = [0,1,2,3,4,5]
 //slice and splice
 
 const spilce = myarr.splice(1,3)
-console.log('b',spilce); 
-console.log(myarr);
+// console.log('b',spilce); 
+// console.log(myarr);
 // splice remove the mention index and make it different array
 /*
 The splice() method adds and/or removes array elements.
@@ -37,3 +37,11 @@ The slice() method does not change the original array.
 // const arre = myarr.join() //join() also makes arrays in string
 // console.log(arre);
 // console.log(typeof arre);
+
+
+//Splice 
+
+let arr = [1,2,3,4,5,6]
+
+// add Element 
+console.log(arr.splice(2,0,'100','101'))
