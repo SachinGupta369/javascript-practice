@@ -2,8 +2,8 @@ const marvel_hores = ["iron man","steve", "hulk", "Black Widow"]
 const dc_hores = ["supermen", "wonderwomen", "flash",]
 
 marvel_hores.push(dc_hores)
-// console.log(marvel_hores);
-// console.log(marvel_hores[4][1]);
+//  console.log(marvel_hores);
+//  console.log(marvel_hores[4][1]);
 
 const new_arry = marvel_hores.concat(dc_hores)
 //console.log(new_arry)
@@ -27,7 +27,7 @@ const fr = Array.from({Name:'SAchin', Age:25}) //Interesting question for Viva
 //console.log(fr.from(Name,Age));
 //console.log(from_array);
 
-const array_of = Array.of("Sachin")
+const array_of = Array.of("Sachin","Mahi",2,3,2,)
 //console.log(array_of);
 
 let score = 100
