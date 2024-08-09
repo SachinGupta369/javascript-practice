@@ -5,3 +5,11 @@
 
 -----------------------   02_Datatypes.js  -------------------------------
 
+----------------------- 03_Basics ---  01_Function.js  -------------------------------
+In spread operator when we return through return keyword we don`t use spread symbol
+
+function spread(num1,num2,...args){
+    return args
+}
+console.log(spread(100,200,300,400,500))  o/p // [300,400,500]
+
