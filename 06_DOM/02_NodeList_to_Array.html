@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeList to convert into Array</title>
+</head>
+<body>
+    <h1>H1 tag here</h1>
+    
+    <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+    </ul>
+</body>
+<script>
+    const myList = document.getElementsByClassName('list-item')
+    const myConvertedArray = Array.from(myList)
+    myConvertedArray.forEach(function(lis){
+        lis.style.color = 'red'
+    })
+
+</script>
+</html>
