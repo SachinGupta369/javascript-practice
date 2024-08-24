@@ -39,5 +39,11 @@
     rem.textContent = 'Hindi'
     edit.replaceWith(rem)
 
+    const reEdit = document.querySelector('li:first-child')
+    reEdit.outerHTML='<li>Sankrut</li>'
+
+    // Remove the ELement
+    const removed = document.querySelector('li:last-child')
+    removed.remove()
 </script>
 </html>
