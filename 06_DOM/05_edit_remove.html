@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove</title>
+</head>
+<body>
+    <ul id="language">
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+    function addLang(lan){
+        const li = document.createElement('li');
+        li.innerHTML=`${lan}`
+        document.querySelector('#language').appendChild(li)
+    }
+    addLang("Sanskrit")
+    addLang('English')
+
+    // below one the optimize way
+    function addOptLang(langName){
+        const lang = document.createElement('li')
+        lang.appendChild(document.createTextNode(langName))
+        document.querySelector('#language').appendChild(lang)
+    }
+
+    addOptLang('Urdu')
+
+    // Edit 
+
+    const edit = document.querySelector('li:nth-child(6)')
+    // edit.innerHTML='Hindi'
+    const rem = document.createElement('li')
+    rem.textContent = 'Hindi'
+    edit.replaceWith(rem)
+
+</script>
+</html>
