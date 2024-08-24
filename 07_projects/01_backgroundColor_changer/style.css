@@ -1,0 +1,39 @@
+*{
+    height: 0px;
+    width: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.button{
+    height: 30px;
+    width: 45px;
+    margin-right: 5px;
+    border: 1px solid ;
+    border-radius: 6px;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#orangered{
+    background-color: orangered;
+}
