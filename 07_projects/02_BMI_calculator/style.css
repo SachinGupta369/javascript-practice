@@ -1,0 +1,17 @@
+.main{
+    margin: 0 auto;
+    width: 250px;
+    height: 500px;
+}
+
+body{
+    background-color: #727272dd;
+}
+
+#result{
+    margin: 10px 0;
+}
+
+#submit{
+    margin: 0px auto;
+}
