@@ -1,0 +1,18 @@
+.main{
+    width: 200px;
+    height: 230px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(100, 98, 98);
+}
+
+#time{
+    background-color: yellow;
+    color: black;
+    font-size: 2.3rem;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
