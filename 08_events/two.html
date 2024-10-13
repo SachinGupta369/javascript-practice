@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Events</title>
+</head>
+<body>
+    <h1 id="head"> Js Mastery </h1>
+    <button id="btn">Stop Button </button>
+
+
+</body>
+<script>
+    function change(){
+        document.querySelector('#head').innerHTML = 'Javascript  Pro Master'
+        console.log('setTimeout js');
+        
+    }
+    
+    const stopTimer = setTimeout(change,3000)
+
+    document.querySelector('#btn').addEventListener('click',function(){
+        console.log('stop timer');
+        clearInterval(stopTimer)
+        // clearTimeout(stopTimer)
+    })
+
+</script>
+</html>
