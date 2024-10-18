@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword</title>
+<style>
+.main{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+}
+
+#screen{
+    margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div id="screen">
+        
+        </div>
+    </div>
+</body>
+<script>
+    const screens = document.getElementById('screen');
+
+    window.addEventListener('keydown',function(e){
+        screens.innerHTML= ` 
+        <div class='table'>
+                <table>
+                <tr>
+                    <th>Key</th>
+                    <th>KeyCode</th>
+                    <th>Code</th>
+                </tr>    
+                <tr>
+                    <td>${e.key == ' ' ? 'space' : e.key }</td>
+                    <td>${e.keyCode}</td>
+                    <td>${e.code}</td>              
+                </tr>
+                </table>    
+            </div>
+        `
+    })
+</script>
+</html>
