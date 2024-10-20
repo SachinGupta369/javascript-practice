@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Card</title>
+    <style>
+        .main{
+            width: 360px;
+            height: 360px;
+        }
+
+        .pic{
+            border:1px solid rebeccapurple;
+        }
+    </style>
+</head>
+<body style="background-color:grey">
+    <div class="main">
+        <div class="pics">
+            <img class="pic" id="pic">
+        </div>
+        <p>Name</p> <span id="name">Name</span>
+    </div>
+</body>
+<script>
+    const Id = 'https://api.github.com/users/sachingupta369'
+
+    const newReq = new XMLHttpRequest();
+    newReq.open('get',Id);
+    newReq.onreadystatechange = function(){
+            console.log(newReq.readyState);
+        if(newReq.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(data);
+            console.log(data.name);
+
+            const pics = data.avatar_url;
+            document.getElementsByClassName('pic').src = pics;
+            document.getElementById('pic').src = pics;
+            document.getElementById('name').innerHTML = data.name
+        }
+    }
+    newReq.send();
+</script>
+</html>
